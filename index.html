@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User registration form</title>
+    <style>
+        .section{
+            width: 400px;
+            align-items: center;
+            margin: auto;
+            text-align: center;
+            
+
+        }
+        .field{
+            padding: 5px;
+            height: 20px;
+            width: 80%;
+            margin-left: 20px;
+            margin-bottom: 12px;
+            border-radius: 8px;
+            border: 1px solid grey;
+            align-items: center;
+    
+        }
+
+        .lable{
+            margin-left: 30px;
+            font-weight: bold;
+        }
+        .submit{
+            padding: 5px 8px;
+            margin-left: 10%;
+            margin-top: 15px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bolder;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .submit:hover{
+            background-color: rgb(42, 234, 42);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section">
+        <h1>Registration form</h1>
+        
+        <form method="post" action="/register" style="text-align: left;">
+            <label for="name" class="lable">Name</label><br>
+            <input type="text" id="name" name="name" class="field" placeholder="Enter your full name" required></br>
+            <label for="mail" class="lable">Email id</label><br>
+            <input type="email" id="mail" name="email" class="field" placeholder="Enter your email id" required><br>
+            <label for="password" class="lable">Password</label><br>
+            <input type="password" id="password" name="password" class="field" placeholder="Ente password" required><br>
+            <input type="submit" class="submit">
+
+        </form>
+
+    </section>
+</body>
+</html>
