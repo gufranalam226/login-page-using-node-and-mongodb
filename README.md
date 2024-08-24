@@ -36,7 +36,7 @@ Run the application:
 
 Open `index.html` in your browser to use the app
 ## 🛠 Skills
-HTML, CSS...
+HTML, CSS, javaScript, Express.js, Node.js, MongoDB...
 
 
 
