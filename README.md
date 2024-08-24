@@ -1,16 +1,18 @@
 
-# Netflix Clone
+# Login Page using Node.js and MongoDB
 
-This repository contains a simple Netflix clone built using HTML and CSS. The project mimics the basic layout and styling of the Netflix homepage.
+This repository contains a simple login page built using Node.js and MongoDB. It demonstrates a basic user authentication flow, including error handling and success notifications.
+
+
 
 
 ## Features
 
-- **Responsive Layout:** The design adjusts to different screen sizes.
+- **User Authentication:** Validates user credentials against a MongoDB database.
 
-- **CSS Styling:** Extensive use of CSS to replicate the Netflix look.
+- **Error and Success Pages:** Displays appropriate messages upon login attempt.
 
-- **HTML Structure:** Semantic HTML elements used for structuring the page.
+- **Minimal Setup:** Simple and easy-to-understand codebase.
 
 
 
@@ -19,7 +21,17 @@ This repository contains a simple Netflix clone built using HTML and CSS. The pr
 Clone the repository:
 
 ```bash
-  git clone https://github.com/gufranalam226/netflix-clone-html-css.git
+  git clone https://github.com/gufranalam226/login-page-using-node-and-mongodb.git
+```
+Install dependencies:
+
+```bash
+  npm install
+```
+Run the application:
+
+```bash
+  node index.js
 ```
 
 Open `index.html` in your browser to use the app
@@ -27,18 +39,7 @@ Open `index.html` in your browser to use the app
 HTML, CSS...
 
 
-## Tech Stack
 
-**HTML:** Structure of the application.
-
-**CSS:** Styling and layout.
-
-
-
-
-## Demo
-
-https://gufranalam226.github.io/
 
 
 ## License
