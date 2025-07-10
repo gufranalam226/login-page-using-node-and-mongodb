@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration Error</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #fff5f5;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .error-container {
+      background-color: white;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+    }
+
+    .error-container h1 {
+      font-size: 28px;
+      color: #e53935;
+      margin-bottom: 15px;
+    }
+
+    .error-container p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 25px;
+    }
+
+    .error-container a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #e53935;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .error-container a:hover {
+      background-color: #c62828;
+    }
+  </style>
+</head>
+<body>
+  <div class="error-container">
+    <h1>Registration Failed ❌</h1>
+    <p>Something went wrong. Please try registering again.</p>
+    <a href="/">Back to Home</a>
+  </div>
+</body>
+</html>
