@@ -12,7 +12,7 @@ const port = process.env.PORT || 3000;
 const username= process.env.MONGODB_USERNAME;
 const password= process.env.MONGODB_PASSWORD;
 
-mongoose.connect(`mongodb+srv://${username}:${password}@cluster0.n4cwrsn.mongodb.net/?retryWrites=true&w=majority` , {
+mongoose.connect(`mongodb+srv://${username}:${password}@cluster0.n4cwrsn.mongodb.net/blogPost?retryWrites=true&w=majority` , {
     // useNewUrlParser: true,
     // useCreateIndex: true,
     // useFindAndModify: false,

@@ -1,68 +1,96 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User registration form</title>
-    <style>
-        .section{
-            width: 400px;
-            align-items: center;
-            margin: auto;
-            text-align: center;
-            
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Registration</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-        }
-        .field{
-            padding: 5px;
-            height: 20px;
-            width: 80%;
-            margin-left: 20px;
-            margin-bottom: 12px;
-            border-radius: 8px;
-            border: 1px solid grey;
-            align-items: center;
-    
-        }
+    body {
+      background: #f5f8ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
 
-        .lable{
-            margin-left: 30px;
-            font-weight: bold;
-        }
-        .submit{
-            padding: 5px 8px;
-            margin-left: 10%;
-            margin-top: 15px;
-            background-color: blue;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-weight: bolder;
-            font-size: 15px;
-            cursor: pointer;
-        }
-        .submit:hover{
-            background-color: rgb(42, 234, 42);
-        }
-    </style>
+    .form-container {
+      background: #ffffff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 420px;
+    }
+
+    .form-container h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin: 12px 0 6px;
+      font-weight: 600;
+      color: #555;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .input-field:focus {
+      border-color: #3f83f8;
+      box-shadow: 0 0 0 3px rgba(63, 131, 248, 0.2);
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      background: #3f83f8;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background: #2f6ee2;
+    }
+  </style>
 </head>
 
 <body>
-    <section class="section">
-        <h1>Registration form</h1>
-        
-        <form method="post" action="/register" style="text-align: left;">
-            <label for="name" class="lable">Name</label><br>
-            <input type="text" id="name" name="name" class="field" placeholder="Enter your full name" required></br>
-            <label for="mail" class="lable">Email id</label><br>
-            <input type="email" id="mail" name="email" class="field" placeholder="Enter your email id" required><br>
-            <label for="password" class="lable">Password</label><br>
-            <input type="password" id="password" name="password" class="field" placeholder="Ente password" required><br>
-            <input type="submit" class="submit">
+  <div class="form-container">
+    <h1>Register</h1>
+    <form method="post" action="/register">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" class="input-field" placeholder="Enter your full name" required />
 
-        </form>
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" class="input-field" placeholder="Enter your email" required />
 
-    </section>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" class="input-field" placeholder="Create a password" required />
+
+      <button type="submit" class="submit-btn">Create Account</button>
+    </form>
+  </div>
 </body>
 </html>
